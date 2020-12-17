@@ -1,0 +1,43 @@
+{
+  "name": "vue-g2polt",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
+    "build": "rollup --config rollup.config.js"
+  },
+  "devDependencies": {
+    "@vuepress/plugin-register-components": "^1.7.1",
+    "autoprefixer": "9",
+    "clean-css": "^4.2.3",
+    "less": "^3.13.0",
+    "less-loader": "^7.1.0",
+    "postcss": "^8.2.1",
+    "rollup": "^1.10.0",
+    "rollup-plugin-babel": "^4.3.2",
+    "rollup-plugin-commonjs": "^9.3.4",
+    "rollup-plugin-css-only": "^3.0.0",
+    "rollup-plugin-embed-css": "^1.0.19",
+    "rollup-plugin-json": "^4.0.0",
+    "rollup-plugin-node-resolve": "^4.2.3",
+    "rollup-plugin-postcss": "^4.0.0",
+    "rollup-plugin-terser": "^4.0.4",
+    "rollup-plugin-vue": "^5.0.0",
+    "vuepress": "^1.7.1"
+  },
+  "dependencies": {
+    "@antv/g2plot": "^2.3.2",
+    "@vue/compiler-sfc": "^3.0.4",
+    "lodash": "^4.17.20"
+  },
+  "browserslist": [
+    "defaults",
+    "not ie < 8",
+    "last 2 versions",
+    "> 1%",
+    "iOS 7",
+    "last 3 iOS versions"
+  ]
+}
