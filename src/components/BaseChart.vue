@@ -6,16 +6,17 @@
 import cloneDeep from 'lodash/cloneDeep';
 import isEqual from 'lodash/isEqual';
 export default {
-  name: 'G2Base',
+  name: 'BaseChart',
+  inheritAttrs: false,
   props: {
     chart: Function,
   },
-  inheritAttrs: false,
   mounted() {
     const { data, config } = this.getChartConfig();
     this.config = cloneDeep(config);
     const normalizedData = data || [];
     this.data = normalizedData;
+    // eslint-disable-next-line new-cap
     this.plot = new this.chart(this.$el, {
       data: normalizedData,
       ...config,
